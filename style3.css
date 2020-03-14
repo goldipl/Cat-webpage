@@ -1,9 +1,9 @@
-@import url(reset2.css);
+@import url(reset3.css);
 
 html {
     font-size: 62.5%;
-    font-family: 'Poiret One', serif, sans-serif;
-    background-color: darkolivegreen;
+    font-family: 'Handlee', cursive, sans-serif;
+    background-color: rgba(143, 106, 46,0.55);
     width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -11,18 +11,17 @@ html {
 
 h1 {
     font-size: 2.8rem;
-    background-color: rgba(225, 223, 223, .15);
-    color: whitesmoke;
+    background-color: rgba(225, 223, 223, .4);
+    color: white;
     text-decoration-style: none;
     text-align: center;
     padding: 1.5rem;
     margin: 1.5rem;
     font-weight: bold;
 }
-
 h2 {
     font-size: 2.2rem;
-    background-color: rgba(225, 223, 223, .15);
+    background-color: rgba(225, 223, 223, .35);
     color: whitesmoke;
     text-decoration-style: none;
     text-align: center;
@@ -32,7 +31,7 @@ h2 {
 
 h3 {
     font-size: 1.8rem;
-    background-color: rgba(219, 219, 90, .15);
+    background-color: rgba(219, 219, 90, .35);
     color: whitesmoke;
     text-decoration-style: none;
     text-align: center;
@@ -83,20 +82,10 @@ p {
 .socialml img:hover {
     transform: scale(1.2);
     transition: 0.5s;
-    filter: drop-shadow(0 0 0.8rem yellowgreen);
+    filter: drop-shadow(0 0 0.8rem #663300);
 }
 
 .stopka {
-    font-size: 1.2rem;
-    background-color: rgba(225, 223, 223, .1);
-    color: white;
-    text-decoration-style: none;
-    text-align: center;
-    padding: 1.6rem;
-    margin: 1.6rem;
-}
-
-.cytat {
     font-size: 1.2rem;
     background-color: rgba(225, 223, 223, .1);
     color: white;
@@ -118,15 +107,18 @@ p {
 }
 
 .glownynews {
-    vertical-align: top;
+    width: 50%;
+    float: left;
+    padding-bottom: 2.0rem;
+    margin-bottom: 1.5rem;
 }
 
-.lista_o_mnie {
+.lista_o_mnie; {
     text-align: center;
     font-size: 1.9rem;
     color: white;
     font-family: monospace;
-    display:grid;
+    display: grid;
 }
 
 .programblog {
@@ -157,10 +149,10 @@ p {
 .wiecej {
     background-color: transparent;
     padding-top: 0.1rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     border-radius: 40px;
     padding: 0.4em 1.0em;
-    color: yellowgreen;
+    color: brown;
     text-decoration: none;
     float: center;
 }
@@ -172,7 +164,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     background-color: transparent;
-    border: 1px solid yellowgreen;
+    border: 1px solid brown;
     border-radius: 40px;
     font-size: 1.5rem;
     padding: 0.6em 1.4em;
@@ -183,8 +175,8 @@ p {
 }
 
 .button:hover {
-    box-shadow: 0 0 10px 0 yellowgreen inset, 0 0 20px 2px yellowgreen;
-    border: 2px solid yellowgreen;
+    box-shadow: 0 0 10px 0 brown inset, 0 0 20px 2px brown;
+    border: 2px solid brown;
 }
 
 .logo {
@@ -208,12 +200,6 @@ p {
     color: white;
     margin-left: 1.0rem;
     margin-top: 0.5rem;
-}
-
-div.box_4_column div {
-    width: 27.7rem;
-    display: inline-block;
-    padding: 0.4rem;
 }
 
 /* CSS do nav bara */
@@ -269,8 +255,7 @@ nav a:after {
   position: absolute;
   left: 0;
   bottom: 20px;
-  background: yellowgreen;
-  transition: width .4s linear;  
+  background: brown;
 }
 
 nav a:hover:after {
@@ -336,7 +321,6 @@ nav a:hover:after {
         position: absolute;
         left: 0;
         bottom: 5px;
-        background: yellowgreen;
         transition: width .4s linear;  
     }
     
@@ -344,51 +328,26 @@ nav a:hover:after {
         font-size: 2.0rem;
     }
     
-    div.box_4_column div {
-        width: 20.0rem;
-        display: inline-block;
-        padding: 0.4rem;  
-    }
-    
+    .glownynews {
+    width: 100%;
+}
+       
 }
 
 /* If the screen size is 440px or less, set the css styles like under */
 
 @media screen and (max-width: 440px) {
-    .logo-container img {
-        display: none;
-    }
-    
-    div.box_4_column div {
-        width: 95%;
-        display: inline-block;
-        padding: 0.4rem;
-    }
-    
-    .napis1 {
-        display: inline-block;
-        font-size: 2.0rem;
-        color: white;
-        margin-top: 0.3rem;
-        padding-top: 0.5rem;
-        margin-left: 1.0rem;
-    }
-    
-    .napis2 {
-        display: inline-block;
-        font-size: 0.95rem;
-        color: white;
-        margin-left: 1.0rem;
-        margin-top: 0.5rem;
-    }
-    
+          
     nav li {
         display: block;
         margin: 0;
         height: 35px;
-        line-height: 35px;
-        
+        line-height: 35px;    
     }
+    
+    .glownynews {
+    width: 100%;
+}
     
     
 }
